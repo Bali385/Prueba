@@ -40,3 +40,76 @@
     <section class="panel">
       <h2>Video del restaurante</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/lk09zZ_3U_
+
+:root {
+  --bg: #fff9ef;
+  --text: #3b2f2f;
+  --accent: #c27b33;
+  --card: #fff3e0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  background: var(--accent);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover { text-decoration: underline; }
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.hero-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(194, 123, 51, 0.5);
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* PANEL */
+.panel {
+  background: var(--card);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 16px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #c27b33;
+  color: #fff;
+}
+footer a { color: #fff; text-decoration: underline; }
