@@ -112,4 +112,289 @@ footer {
   background: #c27b33;
   color: #fff;
 }
+footer a { color: #fff; text-decoration: underline; } 
+el-sabor-de-argel/
+│
+├── index.html
+├── menu.html
+├── contacto.html
+└── style.css
+img/
+│── couscous.jpg
+│── tajine.jpg
+│── té-menta.jpg
+│── logo.png
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Sabor de Argel - Restaurante Argelino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🕌 El Sabor de Argel</a>
+      <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div>
+      <h1>Bienvenido a El Sabor de Argel</h1>
+      <p>Descubre la auténtica cocina argelina: aromas del desierto, especias del Mediterráneo y tradición familiar en cada plato.</p>
+      <a href="menu.html" class="btn">Ver el menú</a>
+    </div>
+    <img src="img/couscous.jpg" alt="Plato típico argelino" class="hero-img">
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="panel">
+      <h2>Nuestra historia</h2>
+      <p>Inspirado en los sabores del norte de África, <strong>El Sabor de Argel</strong> nace para compartir la cultura gastronómica de Argelia. Desde el cuscús familiar hasta el té con menta tradicional, cada plato celebra una herencia milenaria.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Video del restaurante</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lk09zZ_3UO4" title="Comida argelina tradicional" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <!-- Pie -->
+  <footer>
+    © <span id="year"></span> El Sabor de Argel · Síguenos en 
+    <a href="https://www.visitaalgeria.com" target="_blank">Visita Argelia</a> |
+    <a href="https://es.wikipedia.org/wiki/Gastronom%C3%ADa_de_Argelia" target="_blank">Wikipedia</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú - El Sabor de Argel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🕌 El Sabor de Argel</a>
+      <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h1>Menú del día</h1>
+      <p>Prueba nuestros platos tradicionales hechos con ingredientes frescos y especias auténticas del Magreb.</p>
+    </section>
+
+    <section class="panel">
+      <h2>🍲 Entrantes</h2>
+      <ul>
+        <li><strong>Harira</strong> – Sopa tradicional con tomate, lentejas y garbanzos.</li>
+        <li><strong>Ensalada argelina</strong> – Mezcla fresca con aceitunas, pimiento y limón.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>🥘 Platos principales</h2>
+      <ul>
+        <li><strong>Cuscús Real</strong> – Cordero, verduras y garbanzos con sémola fina.</li>
+        <li><strong>Tajine de pollo</strong> – Pollo con limón confitado y aceitunas.</li>
+      </ul>
+      <img src="img/tajine.jpg" alt="Tajine argelino" class="menu-img">
+    </section>
+
+    <section class="panel">
+      <h2>🍮 Postres</h2>
+      <ul>
+        <li><strong>Makroud</strong> – Dulce de dátiles con miel y sémola.</li>
+        <li><strong>Té con menta</strong> – Tradicional bebida del Magreb, dulce y aromática.</li>
+      </ul>
+      <img src="img/té-menta.jpg" alt="Té con menta" class="menu-img">
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> El Sabor de Argel · Disfruta de la tradición argelina 🇩🇿
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - El Sabor de Argel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🕌 El Sabor de Argel</a>
+      <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h1>Contacto</h1>
+      <p>¿Quieres hacer una reserva o pedir más información? Contáctanos a través del formulario o redes sociales.</p>
+    </section>
+
+    <section class="panel">
+      <h2>📩 Formulario</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_demo_form/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+      <!-- Reemplaza el enlace anterior por el tuyo de Google Forms -->
+    </section>
+
+    <section class="panel">
+      <h2>🌍 Encuéntranos</h2>
+      <p>📍 Calle del Mediterráneo 45, Argel, Argelia</p>
+      <p>📞 +213 555 123 456</p>
+      <p>📧 contacto@elsabordealger.com</p>
+    </section>
+
+    <section class="panel">
+      <h2>🔗 Síguenos</h2>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> El Sabor de Argel · Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+:root {
+  --bg: #fff9ef;
+  --text: #3b2f2f;
+  --accent: #c27b33;
+  --card: #fff3e0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  background: var(--accent);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover { text-decoration: underline; }
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.hero-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(194, 123, 51, 0.5);
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* PANEL */
+.panel {
+  background: var(--card);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 16px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.panel h2, .panel h1 {
+  color: var(--accent);
+}
+.menu-img {
+  width: 300px;
+  border-radius: 12px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #c27b33;
+  color: #fff;
+}
 footer a { color: #fff; text-decoration: underline; }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
