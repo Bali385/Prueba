@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Sabor de Argel - Platos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🕌 El Sabor de Argel</a>
+      <div class="links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Platos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h1>🍛 Nuestros Platos Típicos</h1>
+      <p>Disfruta de lo mejor de la gastronomía argelina, con sabores únicos y especias tradicionales del Magreb.</p>
+    </section>
+
+    <section class="menu-grid">
+      <div class="menu-item">
+        <img src="couscous.jpg" alt="Cuscús real">
+        <h3>Cuscús Real</h3>
+        <p>El plato más famoso de Argelia, preparado con cordero, verduras y sémola fina.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="tajine.jpg" alt="Tajine de pollo">
+        <h3>Tajine de Pollo</h3>
+        <p>Pollo marinado con limón confitado, aceitunas y especias mediterráneas.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="te-menta.jpg" alt="Té con menta">
+        <h3>Té con Menta</h3>
+        <p>El tradicional cierre de cada comida: té dulce y aromático con hojas frescas de menta.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> El Sabor de Argel · Sabores auténticos del norte de África
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
